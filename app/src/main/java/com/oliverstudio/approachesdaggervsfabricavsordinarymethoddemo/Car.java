@@ -2,11 +2,14 @@ package com.oliverstudio.approachesdaggervsfabricavsordinarymethoddemo;
 
 import android.util.Log;
 
+import javax.inject.Inject;
+
 public class Car {
 
     private Engine mEngine;
     private Wheels mWheels;
 
+    @Inject
     public Car(Engine engine, Wheels wheels) {
         mEngine = engine;
         mWheels = wheels;
