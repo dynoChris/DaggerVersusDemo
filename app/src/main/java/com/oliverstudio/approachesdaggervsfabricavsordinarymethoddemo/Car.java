@@ -9,7 +9,6 @@ public class Car {
     private Engine mEngine;
     private Wheels mWheels;
 
-    @Inject
     public Car(Engine engine, Wheels wheels) {
         mEngine = engine;
         mWheels = wheels;

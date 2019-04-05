@@ -18,5 +18,7 @@ public class MainActivity extends AppCompatActivity {
         App.getComponent().injectMainActivity(this);
 
         mCar.drive();
+
+
     }
 }
