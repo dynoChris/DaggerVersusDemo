@@ -5,17 +5,13 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Car mCar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        EngineDetailOne engineDetailOne = new EngineDetailOne();
-        Engine engine = new Engine(engineDetailOne);
-
-        WheelsDetailOne wheelsDetailOne = new WheelsDetailOne();
-        Wheels wheels = new Wheels(wheelsDetailOne);
-
-        Car car = new Car(engine, wheels);
+        mCar = CarFactory.create();
     }
 }
